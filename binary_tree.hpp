@@ -22,6 +22,8 @@ public:
     int maxDepth();
 
 private:
+    Node *root;
+
     Node *insertRecursive(Node *current, int value);
 
     void inOrderRecursive(Node *current);
