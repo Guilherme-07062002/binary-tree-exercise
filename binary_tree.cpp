@@ -4,12 +4,12 @@
 
 BinaryTree::BinaryTree()
 {
-    std::cout << "Building Object...";
+    std::cout << "Building Object..." << std::endl;
 }
 
 BinaryTree::~BinaryTree()
 {
-    std::cout << "Destroying Object...";
+    std::cout << "Destroying Object..." << std::endl;
 }
 
 void BinaryTree::insert(int value)
@@ -19,21 +19,21 @@ void BinaryTree::insert(int value)
 
 void BinaryTree::inOrderTraversal()
 {
-    std::cout << "In-order traversal: ";
+    std::cout << "In-order traversal: " << std::endl;
     inOrderRecursive(root);
     std::cout << std::endl;
 }
 
 void BinaryTree::preOrderTraversal()
 {
-    std::cout << "Pre-order traversal: ";
+    std::cout << "Pre-order traversal: " << std::endl;
     preOrderRecursive(root);
     std::cout << std::endl;
 }
 
 void BinaryTree::postOrderTraversal()
 {
-    std::cout << "Post-order traversal: ";
+    std::cout << "Post-order traversal: " << std::endl;
     postOrderRecursive(root);
     std::cout << std::endl;
 }

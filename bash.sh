@@ -1,8 +1,7 @@
 #!/bin/bash
 
-g++ -c main.cpp
-g++ -c binary_tree.cpp
+g++ -c main.cpp binary_tree.cpp recursive.cpp
 
-g++ main.o binary_tree.o -o program
+g++ main.o binary_tree.o recursive.o -o program
 
 ./program
