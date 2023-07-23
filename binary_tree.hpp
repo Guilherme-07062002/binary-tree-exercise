@@ -3,12 +3,11 @@
 #include <iostream>
 #include "node.hpp"
 
-const int capacity = 5;
-
 class BinaryTree
 {
 public:
     BinaryTree();
+
     ~BinaryTree();
 
     void insert(int value);

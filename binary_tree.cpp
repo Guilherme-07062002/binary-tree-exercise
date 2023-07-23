@@ -4,41 +4,43 @@
 
 BinaryTree::BinaryTree()
 {
-    std::cout << "Building Object..." << std::endl;
+    BinaryTree::root = nullptr;
+    std::cout << "Building Object...\n" << std::endl;
 }
 
 BinaryTree::~BinaryTree()
 {
-    std::cout << "Destroying Object..." << std::endl;
+    std::cout << "\nDestroying Object..." << std::endl;
 }
 
 void BinaryTree::insert(int value)
 {
-    root = insertRecursive(root, value);
+    std::cout << "Inserting " << value << "..." << std::endl;
+    BinaryTree::BinaryTree::root = insertRecursive(BinaryTree::root, value);
 }
 
 void BinaryTree::inOrderTraversal()
 {
     std::cout << "In-order traversal: " << std::endl;
-    inOrderRecursive(root);
+    inOrderRecursive(BinaryTree::root);
     std::cout << std::endl;
 }
 
 void BinaryTree::preOrderTraversal()
 {
     std::cout << "Pre-order traversal: " << std::endl;
-    preOrderRecursive(root);
+    preOrderRecursive(BinaryTree::root);
     std::cout << std::endl;
 }
 
 void BinaryTree::postOrderTraversal()
 {
     std::cout << "Post-order traversal: " << std::endl;
-    postOrderRecursive(root);
+    postOrderRecursive(BinaryTree::root);
     std::cout << std::endl;
 }
 
 int BinaryTree::maxDepth()
 {
-    return maxDepthRecursive(root);
+    return maxDepthRecursive(BinaryTree::root);
 }
