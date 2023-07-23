@@ -2,6 +2,16 @@
 #include "binary_tree.hpp"
 #include <iostream>
 
+BinaryTree::BinaryTree()
+{
+    std::cout << "Building Object...";
+}
+
+BinaryTree::~BinaryTree()
+{
+    std::cout << "Destroying Object...";
+}
+
 void BinaryTree::insert(int value)
 {
     root = insertRecursive(root, value);
