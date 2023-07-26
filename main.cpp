@@ -4,22 +4,47 @@
 int main()
 {
     BinaryTree binaryTree;
-    
-    binaryTree.insert(5);
-    binaryTree.insert(3);
-    binaryTree.insert(7);
-    binaryTree.insert(2);
-    binaryTree.insert(4);
-    binaryTree.insert(6);
-    binaryTree.insert(8);
+    int option;
 
-    binaryTree.inOrderTraversal();
+    do
+    {
+        std::cout << "----------------------\n";
+        std::cout << "       MENU\n";
+        std::cout << "----------------------\n";
+        std::cout << "1. Insert node\n";
+        std::cout << "2. Perform in-order transversal\n";
+        std::cout << "3. Perform pre-order transversal\n";
+        std::cout << "4. Perform post-order transversal\n";
+        std::cout << "5. Show tree depth\n";
+        std::cout << "0. Exit\n";
+        std::cout << "Choose a option: ";
+        std::cin >> option;
+        std::cout << "----------------------\n";
 
-    binaryTree.preOrderTraversal();
+        switch (option)
+        {
+        case 1:
+            int number;
+            std::cout << "Enter a number to insert: ";
+            std::cin >> number;
+            binaryTree.insert(number);
+            break;
+        case 2:
+            binaryTree.inOrderTraversal();
+            break;
+        case 3:
+            binaryTree.preOrderTraversal();
+            break;
+        case 4:
+            binaryTree.postOrderTraversal();
+            break;
+        case 5:
+            std::cout << "Binary tree depth: " << binaryTree.maxDepth() << std::endl;
+            break;
+        }
+    } while (option != 0);
 
-    binaryTree.postOrderTraversal();
-
-    std::cout << "Binary tree depth: " << binaryTree.maxDepth() << std::endl;
+    std::cout << "Bye." << std::endl;
 
     return 0;
 }
