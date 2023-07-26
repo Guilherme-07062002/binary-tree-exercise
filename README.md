@@ -26,7 +26,7 @@ The C++ code provided in this repository implements a binary tree with recursive
 * Post-Order Traversal: The code provides a method to perform the post-order traversal of the binary tree, showing the current node after its children.
 * Max Depth of the Tree: The code calculates and returns the maximum depth (height) of the binary tree.
 
-How to Use the Code
+## How to Use the Code
 
 To use the binary tree implementation, follow these steps:
 
