@@ -16,7 +16,8 @@ A binary tree is a data structure consisting of nodes, where each node can have 
 3. Post-Order Traversal
 
     In the post-order traversal, we first recursively traverse the left subtree, then recursively traverse the right subtree, and finally, we visit the current node (print or perform an operation with the node's value). The resulting sequence of nodes in the post-order traversal will follow the order: left subtree, right subtree, current node.
-    Functionality of the Code
+
+## Functionality of the Code
 
 The C++ code provided in this repository implements a binary tree with recursive methods for:
 
